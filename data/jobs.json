@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Nurse",
+    "category": "nurse",
+    "company": "RS EMC Pulomas",
+    "location": "East Jakarta",
+    "salary": "Rp 5.000.000 - 9.000.000",
+    "experience": 3,
+    "employment": "Full Time",
+    "icon": "../Icons/nurse.png"
+  },
+
+  {
+    "id": 2,
+    "title": "ICU Nurse",
+    "category": "nurse",
+    "company": "Mayapada Hospital",
+    "location": "South Jakarta",
+    "salary": "Rp 7.000.000 - 10.000.000",
+    "experience": 2,
+    "employment": "Full Time",
+    "icon": "../Icons/nurse.png"
+  },
+
+  {
+    "id": 3,
+    "title": "General Practitioner",
+    "category": "doctor",
+    "company": "Siloam Hospital",
+    "location": "South Jakarta",
+    "salary": "Rp 12.000.000 - 20.000.000",
+    "experience": 5,
+    "employment": "Full Time",
+    "icon": "../Icons/doctor.png"
+  },
+
+  {
+    "id": 4,
+    "title": "Cardiologist",
+    "category": "doctor",
+    "company": "RS Pondok Indah",
+    "location": "Central Jakarta",
+    "salary": "Rp 25.000.000 - 40.000.000",
+    "experience": 8,
+    "employment": "Contract",
+    "icon": "../Icons/doctor.png"
+  },
+
+  {
+    "id": 5,
+    "title": "Clinical Pharmacist",
+    "category": "pharmacist",
+    "company": "Kimia Farma",
+    "location": "West Jakarta",
+    "salary": "Rp 6.000.000 - 10.000.000",
+    "experience": 2,
+    "employment": "Full Time",
+    "icon": "../Icons/pharmacist.png"
+  },
+
+  {
+    "id": 6,
+    "title": "Hospital Pharmacist",
+    "category": "pharmacist",
+    "company": "Hermina Hospital",
+    "location": "Bekasi",
+    "salary": "Rp 7.000.000 - 11.000.000",
+    "experience": 3,
+    "employment": "Part Time",
+    "icon": "../Icons/pharmacist.png"
+  },
+
+  {
+    "id": 7,
+    "title": "Midwife",
+    "category": "midwife",
+    "company": "RS Hermina",
+    "location": "Bekasi",
+    "salary": "Rp 5.500.000 - 8.000.000",
+    "experience": 1,
+    "employment": "Full Time",
+    "icon": "../Icons/midwife.png"
+  },
+
+  {
+    "id": 8,
+    "title": "Senior Midwife",
+    "category": "midwife",
+    "company": "Bunda Hospital",
+    "location": "Tangerang",
+    "salary": "Rp 7.000.000 - 9.000.000",
+    "experience": 4,
+    "employment": "Contract",
+    "icon": "../Icons/midwife.png"
+  },
+
+  {
+    "id": 9,
+    "title": "Emergency Nurse",
+    "category": "nurse",
+    "company": "RSUD Tangerang",
+    "location": "Tangerang",
+    "salary": "Rp 6.000.000 - 9.000.000",
+    "experience": 2,
+    "employment": "Part Time",
+    "icon": "../Icons/nurse.png"
+  },
+
+  {
+    "id": 10,
+    "title": "Pediatric Doctor",
+    "category": "doctor",
+    "company": "RS Cipto Mangunkusumo",
+    "location": "Central Jakarta",
+    "salary": "Rp 18.000.000 - 30.000.000",
+    "experience": 6,
+    "employment": "Full Time",
+    "icon": "../Icons/doctor.png"
+  }
+]

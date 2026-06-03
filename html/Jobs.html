@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/jobs.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <h2 class="logo">MP</h2>
+
+    <ul class="nav-links">
+
+        <li><a href="/html/HomePage.html">Home</a></li>
+        <li><a href="/html/Jobs.html">Jobs</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <button class="join-btn">
+        Join Now
+    </button>
+
+</nav>
+
+<!-- HERO SEARCH -->
+
+<section class="jobs-hero">
+
+    <div class="jobs-hero-content">
+
+        <h1>Find Your Dream Healthcare Career</h1>
+
+        <p>
+            Explore thousands of opportunities from trusted healthcare providers.
+        </p>
+
+        <div class="jobs-search">
+
+            <div class="search-input">
+
+                <img src="../Icons/search.png" alt="">
+
+                <input
+                    type="text"
+                    id="jobSearch"
+                    placeholder="Search jobs..."
+                >
+
+            </div>
+
+            <div class="search-input">
+
+                <img src="../Icons/location.png" alt="">
+
+                <input
+                    type="text"
+                    id="locationSearch"
+                    placeholder="Location"
+                >
+
+            </div>
+
+            <button class="search-job-btn">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CATEGORY -->
+
+<section class="job-category">
+
+    <button class="category-pill active">
+        All
+    </button>
+
+    <button class="category-pill">
+        Doctor
+    </button>
+
+    <button class="category-pill">
+        Nurse
+    </button>
+
+    <button class="category-pill">
+        Pharmacist
+    </button>
+
+    <button class="category-pill">
+        Midwife
+    </button>
+
+</section>
+
+<!-- MAIN CONTENT -->
+
+<section class="jobs-section">
+
+    <!-- FILTER -->
+
+    <aside class="filter-panel">
+
+        <h3>Filter Jobs</h3>
+
+        <div class="filter-group">
+
+            <h4>Employment Type</h4>
+
+        <label>
+            <input
+                type="checkbox"
+                class="employment-filter"
+                value="Full Time"
+            >
+            Full Time
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                class="employment-filter"
+                value="Part Time"
+            >
+            Part Time
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                class="employment-filter"
+                value="Contract"
+            >
+            Contract
+        </label>
+
+        </div>
+
+        <div class="filter-group">
+
+            <h4>Experience</h4>
+        <label>
+            <input
+                type="checkbox"
+                class="experience-filter"
+                value="1"
+            >
+            1+ Year
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                class="experience-filter"
+                value="3"
+            >
+            3+ Years
+        </label>
+
+        <label>
+            <input
+                type="checkbox"
+                class="experience-filter"
+                value="5"
+            >
+            5+ Years
+        </label>
+
+        </div>
+
+    </aside>
+
+    <!-- JOB LIST -->
+
+    <div 
+    class="jobs-container"
+    id="jobsContainer">
+    </div>
+
+</section>
+
+<!-- PAGINATION -->
+
+<section class="pagination-section">
+
+    <button class="page-btn active">
+        1
+    </button>
+
+    <button class="page-btn">
+        2
+    </button>
+
+    <button class="page-btn">
+        3
+    </button>
+
+    <button class="page-btn">
+        >
+    </button>
+
+</section>
+
+<!-- JOB MODAL -->
+
+<div class="job-modal" id="jobModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">
+            &times;
+        </span>
+
+        <h2>Nurse</h2>
+
+        <h4>RS EMC Pulomas</h4>
+
+        <p>
+            <strong>Location:</strong>
+            East Jakarta
+        </p>
+
+        <p>
+            <strong>Salary:</strong>
+            Rp 5.000.000 - 9.000.000
+        </p>
+
+        <h3>Requirements</h3>
+
+        <ul>
+
+            <li>Active STR</li>
+
+            <li>Bachelor Degree in Nursing</li>
+
+            <li>Minimum 3 Years Experience</li>
+
+            <li>Good Communication Skills</li>
+
+        </ul>
+
+        <h3>Responsibilities</h3>
+
+        <ul>
+
+            <li>Provide patient care</li>
+
+            <li>Administer medication</li>
+
+            <li>Monitor patient conditions</li>
+
+            <li>Prepare medical reports</li>
+
+        </ul>
+
+        <button class="apply-confirm-btn">
+            Submit Application
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h3>General</h3>
+
+            <a href="#">Home</a>
+            <a href="#">Jobs</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Browse</h3>
+
+            <a href="#">Jobs</a>
+            <a href="#">Top Companies</a>
+            <a href="#">Top Payments</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>About MJ</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Career</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Contact Center</h3>
+
+            <div class="contact-box">
+                119-150
+            </div>
+
+            <div class="contact-box">
+                02891389137923
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="../js/jobs.js"></script>
+    <script src="../js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+/* CSS untuk halaman registrasi yang berfungsi menampilkan form registration*/
+
+.register-section{
+  position:relative;
+  background:#eef7f8;
+  padding:50px 8%;
+}
+
+.register-container{
+  max-width:900px;
+  margin:auto;
+  background:#fff;
+  border-radius:25px;
+  padding:50px 60px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.input-box{
+  height:55px;
+  border:2px solid #cde8ed;
+  border-radius:16px;
+  padding:0 18px;
+}
+
+.register-btn{
+  width:100%;
+  height:58px;
+  background:#5b969f;
+  color:#fff;
+  border-radius:18px;
+}
+
+.register-section{
+  position:relative;
+  background:#eef7f8;
+  padding:50px 8%;
+  overflow:hidden;
+}
+
+.register-container{
+  position:relative;
+  z-index:2;
+
+  max-width:900px;
+  margin:auto;
+
+  background:#fff;
+
+  border-radius:25px;
+
+  padding:50px 60px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* SECTION */
+
+.form-section{
+  margin-bottom:25px;
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:20px;
+}
+
+.section-title h2{
+  font-size:38px;
+  color:#5b969f;
+  font-weight:700;
+}
+
+.title-icon{
+  width:55px;
+  height:55px;
+
+  border-radius:50%;
+
+  background:#eef7f8;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.title-icon img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
+}
+
+.divider{
+  width:100%;
+  height:2px;
+  background:#ddd;
+  margin-bottom:20px;
+}
+
+/* FORM */
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.input-wrapper{
+  margin-bottom:18px;
+}
+
+.full-width{
+  width:100%;
+}
+
+.input-wrapper label{
+  display:block;
+  margin-bottom:10px;
+
+  font-size:15px;
+  font-weight:600;
+
+  color:#333;
+}
+
+.input-box{
+  height:55px;
+
+  border:2px solid #cde8ed;
+  border-radius:16px;
+
+  padding:0 18px;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  background:#fff;
+}
+
+.input-box img{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  flex-shrink:0;
+}
+
+.input-box input{
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  font-size:15px;
+  font-family:'Poppins',sans-serif;
+
+  background:transparent;
+}
+
+.input-box input::placeholder{
+  color:#bbb;
+}
+
+/* PASSWORD */
+
+.password-box{
+  justify-content:space-between;
+}
+
+.eye-btn{
+  background:none;
+  border:none;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.eye-btn img{
+  width:20px;
+  height:20px;
+}
+
+/* BUTTON */
+
+.register-btn{
+  width:100%;
+  height:58px;
+
+  margin-top:20px;
+
+  background:#5b969f;
+  color:#fff;
+
+  border:none;
+  border-radius:18px;
+
+  font-size:18px;
+  font-weight:600;
+}
+
+.register-btn:hover{
+  background:#4b858d;
+}
+
+/* LOGIN LINK */
+
+.login-text{
+  margin-top:25px;
+  text-align:center;
+  color:#666;
+}
+
+.login-text a{
+  color:#5b969f;
+  font-weight:600;
+}
+
+/* MESSAGE */
+
+.form-message{
+  text-align:center;
+  margin-top:15px;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.form-message.error{
+  color:#e74c3c;
+}
+
+.form-message.success{
+  color:#27ae60;
+}
