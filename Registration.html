@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Register Page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <h2 class="logo">
+      MP
+    </h2>
+
+    <ul class="nav-links">
+
+      <li><a href="/HomePage.html">Home</a></li>
+
+      <li><a href="/Jobs.html">Jobs</a></li>
+
+      <li><a href="#">About Us</a></li>
+
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <button class="join-btn">
+      Join Now
+    </button>
+
+  </nav>
+
+  <!-- REGISTER SECTION -->
+
+  <section class="register-section">
+
+    <!-- TOP WAVE -->
+
+    <img
+      src="Pic/top-wave.png"
+      class="top-wave"
+      alt="Top Wave"
+    >
+
+    <!-- FORM -->
+
+    <form
+      class="register-container"
+      id="registerForm"
+    >
+
+      <!-- PERSONAL INFO -->
+
+      <div class="form-section">
+
+        <div class="section-title">
+
+          <div class="title-icon">
+            <img src="Icons/user.png" alt="">
+          </div>
+
+          <h2>Personal Information</h2>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-grid">
+
+          <div class="input-wrapper">
+
+            <label>Full Name</label>
+
+            <div class="input-box">
+
+              <img src="Icons/user.png" alt="">
+
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="fullName"
+                required
+              >
+
+            </div>
+
+          </div>
+
+          <div class="input-wrapper">
+
+            <label>Date Of Birth</label>
+
+            <div class="input-box">
+
+              <img src="Icons/calendar.png" alt="">
+
+              <input
+                type="date"
+                id="birthDate"
+                required
+              >
+
+            </div>
+
+          </div>
+
+          <div class="input-wrapper">
+
+            <label>Email</label>
+
+            <div class="input-box">
+
+              <img src="Icons/email.png" alt="">
+
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                required
+              >
+
+            </div>
+
+          </div>
+
+          <div class="input-wrapper">
+
+            <label>Phone Number</label>
+
+            <div class="input-box">
+
+              <img src="Icons/phone.png" alt="">
+
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phone"
+                required
+              >
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="input-wrapper full-width">
+
+          <label>Location</label>
+
+          <div class="input-box">
+
+            <img src="Icons/location.png" alt="">
+
+            <input
+              type="text"
+              placeholder="Address"
+              id="address"
+              required
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ACCOUNT INFO -->
+
+      <div class="form-section">
+
+        <div class="section-title">
+
+          <div class="title-icon">
+            <img src="Icons/lock.png" alt="">
+          </div>
+
+          <h2>Account Information</h2>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="input-wrapper full-width">
+
+          <label>Password</label>
+
+          <div class="input-box password-box">
+
+            <img src="Icons/lock.png" alt="">
+
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              required
+            >
+
+            <button
+              type="button"
+              class="eye-btn"
+              onclick="togglePassword('password')"
+            >
+
+              <img src="Icons/eye.png" alt="">
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="input-wrapper full-width">
+
+          <label>Confirm Password</label>
+
+          <div class="input-box password-box">
+
+            <img src="Icons/lock.png" alt="">
+
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confirmPassword"
+              required
+            >
+
+            <button
+              type="button"
+              class="eye-btn"
+              onclick="togglePassword('confirmPassword')"
+            >
+
+              <img src="Icons/eye.png" alt="">
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MESSAGE -->
+
+      <div
+        id="registerMessage"
+        class="form-message"
+      ></div>
+
+      <!-- BUTTON -->
+
+      <button
+        type="submit"
+        class="register-btn"
+      >
+        CREATE ACCOUNT
+      </button>
+
+      <!-- LOGIN TEXT -->
+
+      <p class="login-text">
+
+        Already have an account?
+
+        <a href="SignIn.html">
+          Sign In
+        </a>
+
+      </p>
+
+    </form>
+
+    <!-- BOTTOM WAVE -->
+
+    <img
+      src="Pic/bottom-wave.png"
+      class="bottom-wave"
+      alt="Bottom Wave"
+    >
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-column">
+
+        <h3>General</h3>
+
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Browse</h3>
+
+        <a href="#">Jobs</a>
+        <a href="#">Top Companies</a>
+        <a href="#">Top Payments</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>About MJ</h3>
+
+        <a href="#">About Us</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Contact Center</h3>
+
+        <div class="contact-box">
+          119-150
+        </div>
+
+        <div class="contact-box">
+          02891389137923
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

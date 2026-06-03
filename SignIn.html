@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Sign In</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <h2 class="logo">
+      MP
+    </h2>
+
+    <ul class="nav-links">
+
+      <li><a href="HomePage.html">Home</a></li>
+
+      <li><a href="/Jobs.html">Jobs</a></li>
+
+      <li><a href="#">About Us</a></li>
+
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <button
+      class="join-btn"
+      onclick="window.location.href='Registration.html'"
+    >
+      Join Now
+    </button>
+
+  </nav>
+
+  <!-- LOGIN SECTION -->
+
+  <section class="login-section">
+
+    <!-- BACKGROUND -->
+
+    <img
+      src="Pic/login-background.png"
+      class="login-background"
+      alt=""
+    >
+
+    <div class="login-wrapper">
+
+      <!-- LEFT CONTENT -->
+
+      <div class="login-left">
+
+        <h1>
+          Sign In<br>
+        </h1>
+
+        <h3>
+          Your health journey start here
+        </h3>
+
+        <div class="login-line"></div>
+
+        <p>
+          Access trusted healthcare services
+          with ease and comfort
+        </p>
+
+        <img
+          src="Pic/login-doctor.png"
+          class="login-hero-img"
+          alt=""
+        >
+
+      </div>
+
+      <!-- LOGIN CARD -->
+
+      <form
+        class="login-card"
+        id="loginForm"
+      >
+
+        <h2>Sign in</h2>
+
+        <!-- EMAIL -->
+
+        <div class="login-form-group">
+
+          <label>Email</label>
+
+          <div class="login-input">
+
+            <img src="Icons/email.png" alt="">
+
+            <input
+              type="email"
+              placeholder="nama@gmail.com"
+              id="loginEmail"
+              required
+            >
+
+          </div>
+
+        </div>
+
+        <!-- PASSWORD -->
+
+        <div class="login-form-group">
+
+          <label>Password</label>
+
+          <div class="login-input">
+
+            <img src="Icons/lock.png" alt="">
+
+            <input
+              type="password"
+              placeholder="••••••••"
+              id="loginPassword"
+              required
+            >
+
+            <button
+              type="button"
+              class="eye-btn"
+              onclick="togglePassword('loginPassword')"
+            >
+
+              <img src="Icons/eye.png" alt="">
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- OPTIONS -->
+
+        <div class="login-options">
+
+          <div class="remember-box">
+
+            <input
+              type="checkbox"
+              id="rememberMe"
+            >
+
+            <span>
+              Keep me Sign in
+            </span>
+
+          </div>
+
+          <a href="#" class="forgot-link">
+            Forget Password?
+          </a>
+
+        </div>
+
+        <!-- MESSAGE -->
+
+        <div
+          id="loginMessage"
+          class="form-message"
+        ></div>
+
+        <!-- BUTTON -->
+
+        <button
+          type="submit"
+          class="login-btn"
+        >
+          Sign in
+        </button>
+
+        <!-- DIVIDER -->
+
+        <div class="login-divider">
+          <span>OR</span>
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div class="social-login">
+
+          <button
+            type="button"
+            class="social-btn"
+          >
+            <img src="Icons/google.png" alt="">
+          </button>
+
+          <button
+            type="button"
+            class="social-btn"
+          >
+            <img src="Icons/microsoft.png" alt="">
+          </button>
+
+          <button
+            type="button"
+            class="social-btn"
+          >
+            <img src="Icons/apple.png" alt="">
+          </button>
+
+        </div>
+
+        <!-- SIGNUP -->
+
+        <p class="signup-text">
+
+          Don't have an account?
+
+          <a href="Registration.html">
+            Sign Up
+          </a>
+
+        </p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-column">
+
+        <h3>General</h3>
+
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Browse</h3>
+
+        <a href="#">Jobs</a>
+        <a href="#">Top Companies</a>
+        <a href="#">Top Payments</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>About MJ</h3>
+
+        <a href="#">About Us</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Contact Center</h3>
+
+        <div class="contact-box">
+          119-150
+        </div>
+
+        <div class="contact-box">
+          02891389137923
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
