@@ -1,0 +1,168 @@
+/* ABOUT US LAYOUT STYLES */
+
+/* Hero Banner Section */
+.hero-section {
+    background: linear-gradient(135deg, #2F666A 0%, #1A3B3D 100%);
+    color: #FFFFFF;
+    padding: 100px 8%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #E2ECEF;
+    font-weight: 300;
+}
+
+/* Core Values / Commitment Section */
+.commitment-section {
+    padding: 100px 8%;
+    background-color: #FAFAFA;
+    text-align: center;
+    position: relative;
+}
+
+.commitment-section h2 {
+    font-size: 36px;
+    color: #1A3B3D;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.commitment-section .subtitle {
+    font-size: 16px;
+    color: #666666;
+    max-width: 650px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+/* Flexbox Grid Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Value Cards Styling */
+.card {
+    background: #FFFFFF;
+    border: 1px solid #EBF0F2;
+    border-radius: 20px;
+    padding: 45px 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(47, 102, 106, 0.08);
+    border-color: #2F666A;
+}
+
+/* SVG Icon Decorators */
+.icon-wrapper {
+    width: 55px;
+    height: 55px;
+    background-color: #EBF3F5;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    color: #2F666A;
+}
+
+.icon-wrapper svg {
+    width: 26px;
+    height: 26px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #1A3B3D;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Carousel Side Arrow UI Component */
+.carousel-arrow {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #EBF0F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2F666A;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.carousel-arrow:hover {
+    background: #2F666A;
+    color: #FFFFFF;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-arrow svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Scaling for Layout Breakpoints */
+@media (max-width: 992px) {
+    .carousel-arrow {
+        display: none; /* Hides floating decoration arrow on smaller tablet views */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .commitment-section {
+        padding: 60px 5%;
+    }
+    
+    .cards-container {
+        gap: 20px;
+    }
+}

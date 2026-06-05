@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Medical Portal</title>
+    
+    <link rel="stylesheet" href="../css/Contact.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">MP</h2>
+    <ul class="nav-links">
+      <li><a href="../html/HomePage.html">Home</a></li>
+      <li><a href="../html/Jobs.html">Jobs</a></li>
+      <li><a href="../html/AboutUs.html">About Us</a></li>
+      <li><a href="../html/Contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="../html/Registration.html" class="join-btn">
+      Join Now
+    </a>
+  </nav>
+
+  <!-- MAIN CONTACT WRAPPER -->
+  <main class="contact-container">
+      
+      <!-- LEFT PROFILE INFO CARD -->
+      <section class="info-sidebar">
+          <div class="profile-header">
+              <div class="avatar-circle">
+                  <span>MP</span>
+              </div>
+              <h2>Medical Portal</h2>
+              <p class="verification-badge">✓ Verified Provider</p>
+          </div>
+          
+          <div class="contact-details-list">
+              <div class="detail-item">
+                  <div class="icon-box-small">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                      <h4>Call Us Directly</h4>
+                      <p>119-150 / 02891389137923</p>
+                  </div>
+              </div>
+
+              <div class="detail-item">
+                  <div class="icon-box-small">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div>
+                      <h4>Email Address</h4>
+                      <p>support@medicalportal.id</p>
+                  </div>
+              </div>
+
+              <div class="detail-item">
+                  <div class="icon-box-small">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                      <h4>Main HQ Location</h4>
+                      <p>Jl. Jalur Sutera Barat No.Kav. 21, RT.001/RW.004, Panunggangan Timur, Pinang, Tangerang City, Banten 15143</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- RIGHT SIDE FORM & MAP INTERFACE -->
+      <section class="content-panel">
+
+          <!-- FIXED MAP WRAPPER -->
+          <!-- FIXED MAP WRAPPER -->
+        <div class="map-wrapper">
+            <iframe 
+                src="https://maps.google.com/maps?q=BINUS%20University%2C%20Alam%20Sutera%20Campus&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+          <!-- CONTACT FORM -->
+          <form class="contact-form" action="#" method="POST">
+              <h3>Send us a Message</h3>
+              <p class="form-desc">Have questions about openings or recruitment partnerships? Fill out the fields below.</p>
+
+              <div class="form-row">
+                  <div class="form-group">
+                      <label for="fullName">Full Name</label>
+                      <input type="text" id="fullName" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="emailAddr">Email Address</label>
+                      <input type="email" id="emailAddr" placeholder="example@domain.com" required>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="subjectMsg">Subject</label>
+                  <input type="text" id="subjectMsg" placeholder="How can we help you?" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="messageBody">Message Details</label>
+                  <textarea id="messageBody" rows="5" placeholder="Write your message context here..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-form-btn">Send Message</button>
+          </form>
+
+      </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>General</h3>
+        <a href="../html/HomePage.html">Home</a>
+        <a href="../html/Jobs.html">Jobs</a>
+        <a href="../html/AboutUs.html">About Us</a>
+        <a href="../html/Contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Browse</h3>
+        <a href="../html/Jobs.html">Jobs</a>
+        <a href="#">Top Companies</a>
+        <a href="#">Top Payments</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>About MP</h3>
+        <a href="../html/AboutUs.html">About Us</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Center</h3>
+        <div class="contact-box">119-150</div>
+        <div class="contact-box">02891389137923</div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/homepage.js"></script>
+    <script src="../js/jobs.js"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/auth.js"></script> 
+
+</body>
+</html>
