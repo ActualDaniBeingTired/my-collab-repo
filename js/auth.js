@@ -251,3 +251,147 @@ if (
     rememberedEmail;
 
 }
+
+/* =====================================
+   NAVBAR LOGIN STATE
+===================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const navbar =
+        document.querySelector(
+            ".navbar"
+        );
+
+        if (!navbar) return;
+
+        const isLoggedIn =
+
+        localStorage.getItem(
+            "isLoggedIn"
+        );
+
+        if (
+            isLoggedIn !== "true"
+        ) return;
+
+        const joinBtn =
+        document.querySelector(
+            ".join-btn"
+        );
+
+        if (joinBtn) {
+
+            joinBtn.remove();
+
+        }
+
+        const savedProfile =
+
+        JSON.parse(
+            localStorage.getItem(
+                "profileData"
+            )
+        );
+
+        const profileImage =
+
+            savedProfile?.profileImage ||
+
+            "../Images/default-profile.png";
+
+        const profileMenu =
+        document.createElement(
+            "div"
+        );
+
+        profileMenu.className =
+        "profile-menu";
+
+        profileMenu.innerHTML = `
+
+        <img
+            id="navProfileImage"
+            class="nav-profile-image"
+            src="${profileImage}"
+            alt="Profile"
+        >
+
+        <div
+            id="profileDropdown"
+            class="profile-dropdown"
+        >
+
+            <a href="../html/Profile.html">
+                My Profile
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+        `;
+
+        navbar.appendChild(
+            profileMenu
+        );
+
+        const navProfileImage =
+        document.getElementById(
+            "navProfileImage"
+        );
+
+        const profileDropdown =
+        document.getElementById(
+            "profileDropdown"
+        );
+
+        navProfileImage.addEventListener(
+            "click",
+            (e) => {
+
+                e.stopPropagation();
+
+                profileDropdown.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+        document.addEventListener(
+            "click",
+            () => {
+
+                profileDropdown.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+        const logoutBtn =
+        document.getElementById(
+            "logoutBtn"
+        );
+
+        logoutBtn.addEventListener(
+            "click",
+            () => {
+
+                localStorage.removeItem(
+                    "isLoggedIn"
+                );
+
+                window.location.href =
+                "../html/SignIn.html";
+
+            }
+        );
+
+    }
+);
